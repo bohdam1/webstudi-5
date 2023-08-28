@@ -39,7 +39,7 @@
                     <li class="margin-on-header">
                         <a class="data-items" href="tel:+380961111111">
                             <svg class="icon-data">
-                             <use href="./images/sprite.svg#icon-smartphone"></use>       
+                             <use href="./images/sprite.svg#icon-tel"></use>       
                             </svg>+38 096 111 11 11
                         </a>
                     </li>
@@ -52,7 +52,7 @@
     </header>
     <main class="main-page">
         <section class="hero"><!-- герой -->
-            <div class="container hero-container">
+        <div class="container hero-container">
                 <h1 class="hero-title">Ефективні рішення <br>для вашого бізнесу</h1>
                 <button class="hero-button" type="button" data-modal-open>Замовити послугу</button>
             </div> 
@@ -493,6 +493,22 @@
                     </li>
                 </ul>
             </section>
+            <div class="form-conteiner">
+                <h2 class="footer-title">Підпишіться на розсилку</h2>
+                <form class="form-footer">
+                    <div class="form-footer-conteiner">
+                        <input class="input-footer" placeholder="E-mail"/>
+                        <button  type="submit"class="hero-button footer-buton">
+                            
+                            Підписатися 
+                            <svg class=" footer-input-icone" >
+                                <use href="./images/sprite.svg#icon-send"></use>
+                            </svg> 
+                        </button>
+                    </div>
+                </form>
+
+            </div>
 
         </div>
                 
@@ -506,6 +522,57 @@
                 </svg>
     
             </button>
+            <h2 class="modal-title">Залиште свої дані, ми вам передзвонимо</h2>
+            <form class="form-general" autocomplete="on">
+                <div class="general-iformation">
+                    <label class="label-form" for="name">Ім'я</label>
+                    <div class="input-area">
+                        <input class="input-form" type="text" name="name" id="name"/>
+                        <svg class="form-icon" >
+                            <use href="./images/sprite.svg#icon-person-black"></use>
+                        </svg> 
+                    </div>
+
+                    <label class="label-form" for="phone">Телефон</label>
+                    <div class="input-area">
+                        <input class="input-form" type="tel" name="phone" id="phone"/>
+                        <svg class="form-icon" >
+                            <use href="./images/sprite.svg#icon-phone-black"></use>
+                        </svg>
+                    </div>
+
+                    <label class="label-form" for="email">Пошта</label>
+                    <div class="input-area">
+                        <input class="input-form" type="email" name="email" id="email"/>
+                        <svg class="form-icon" >
+                            <use href="./images/sprite.svg#icon-email-black"></use>
+                        </svg>
+                    </div>
+
+                    <label class="label-form" for="comment">Коментар</label>
+                    <textarea class="textarea-form" name="comment" id="comment" placeholder="Введіть текст"></textarea>
+
+
+                </div>
+                <div class="checkbox-modal">
+                    <div class="check-icon">
+                        <input class="checkbox" type="checkbox" name="newsletter" id="newsletter-agreement"/>
+                        <svg class="check-icon-end" >
+                            <use href="./images/sprite.svg#icon-check"></use>
+                        </svg>
+                        <svg class="check-icon-start" >
+                            <use href="./images/sprite.svg#icon-Vector"></use>
+                        </svg>
+                    </div>
+                    <label for="newsletter-agreement">Погоджуюся з розсилкою та приймаю <a class="link-form" href="#">Умови договору</a></label>
+
+                </div>
+                <div class="button-form">
+                    
+                    <button  type="submit" class="button-valid">Відправити</button>
+                </div>
+                
+            </form>
         </div>
     </div>
     <script src="./js/modal.js"></script>
