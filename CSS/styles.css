@@ -824,6 +824,8 @@ margin-left: 93px;
     float: right;
     margin-top: 8px;
     margin-right: 8px;
+    background-color: #FFFFFF;
+    border-color:  rgba(0, 0, 0, 0.10);;
 
     width: 30px;
     height: 30px;
@@ -840,6 +842,10 @@ margin-left: 93px;
     /* top: 50%;
     left: 50%;
   transform: translate(-50%, -50%); */
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.icone-close:hover{
+    fill: var(--color-background-accent);
 }
 .form-general{
 
@@ -996,6 +1002,12 @@ margin-left: 93px;
     font-weight: 700;
     line-height: 187%; /* 187.5% */
     letter-spacing: 0.96px;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.button-valid:hover,
+.button-valid:focus {
+    opacity: 0.8;
 }
 .link-form{
     color: var(--color-accent);
