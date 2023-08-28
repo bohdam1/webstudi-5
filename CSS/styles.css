@@ -843,10 +843,11 @@ margin-left: 93px;
     left: 50%;
   transform: translate(-50%, -50%); */
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  padding: px;
 }
-.icone-close:hover{
-    fill: var(--color-background-accent);
-}
+.button-close:hover .icone-close {
+    fill: var(--color-background-accent); /* Change to the desired accent color */
+  }
 .form-general{
 
 }
